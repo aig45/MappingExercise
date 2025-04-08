@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Juan Francisco Saldarriaga" />
+    <meta
+      name="keywords"
+      content="mapping, storytelling, urban design, new york"
+    />
+    <title>Assignment 1 - Web Map</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v3.9.4/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.9.4/mapbox-gl.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <a
+        class="nav-title"
+        href="../index.html"
+        >URBAN DATA MAP ASSIGNMENT</a
+      >
+    </header>
+    <main>
+      <div class="assignment">
+        <p class="assignment-title">Charts and Graphs - Building Energy Score Data</p>
+        <p class="assignment-description">
+          Data investigations on NYC Building Energy Scores.
+        </p> 
+
+   <p class="assignment-title">
+          Letter Grade Breakdown </p>
+          <p class="assignment-description">
+            This chart represents buildings (Count of Records) in all 5 boroghs of New York by Enegery Score letter grades (A-F). The majority of buildings have a D grade with over 7,500 graded buildings recieving this score. While this is not the most optimistic result in terms of energy efficiency in NYC buildings, the lowest category by far is buildings receiving an F score. 
+          </p> 
+          <img
+            class="assignment"
+            src="../Link6_Assignment5/visualization.png"
+            alt="Chart1">
+      </div>
+  </main>
+  <p></p>
+
+  <p class="assignment-title">
+    EnergyStar vs Total Floor Area </p>
+    <p class="assignment-description">
+      This chart was an attempt to see if there was any correlation between the total floor area (Shape_Area) and Energy Score (EnergyStar).The question that inspired this chart was whether having a larger building makes it more difficult to properly retrofit and maintain it, and by exention more difficult to recieve a high Energy Score. There does not appear to be any correlation. 
+    </p> 
+    <img
+      class="assignment"
+      src="../Link6_Assignment5/visualization (1).png"
+      alt="Chart2">
+</div>
+</main>
+<p></p>
+
+<p class="assignment-title">
+  Letter Grade by Tax Class </p>
+  <p class="assignment-description">
+    This chart investigates the ratio of building letter grade by tax class (Tax_Class). While all tax classes have a majority of D rated buildings, tax class 2 has the lowest ratio of F graded building. Tax class 0 has the highest ratio of F graded buildings which is surprising becuase buildings that are not yet assessed for property tax purposes because tax class 0 often means that the buildings are still under construction or not yet ready for occupancy. I would have expected new builds to have the lowest amount of F graded buildings.
+  </p> 
+  <img
+    class="assignment"
+    src="../Link6_Assignment5/visualization (2).png"
+    alt="Chart3">
+</div>
+</main>
+<p></p>
+
+<p class="assignment-title">
+  Letter Grade by Borough </p>
+  <p class="assignment-description">
+    This chart shows the break down of buildings color coded by letter grade (LetterGrad) by each borough (Boro_Lablel). Manhattan has by far the smallest ratio of F grade buildings, perhaps due to its building stock have more new builds or avalible wealth to retrofit buildings in comparison to the Bronx or Brooklyn.
+  </p> 
+  <img
+    class="assignment"
+    src="../Link6_Assignment5/visualization (3).png"
+    alt="Chart4">
+</div>
+</main>
+<p></p>
+
+    <p class="assignment-title">
+            Letter Grade by Zip Code </p>
+            <p class="assignment-description">
+              This chart shows the breakdown of buildings (Count of Records) by letter grade within each zip code (Zipcode_1) of New York City. This bar chart shows zip codes in order of number of buildings, but upon closer inspection the breakdown of letter grades in each zip code reveals some stand out zip codes. For example, 11236 and 11103 have almost no A graded buildings. 11206 stands out on the other end of the spectrum with a particularly high percentage of F graded buildings.  
+            </p> 
+            <img
+              class="body"
+              src="../Link6_Assignment5/chart4.jpg"
+              alt="Chart5">
+        </div>
+    </main>
+    <p></p>
+
+    <footer>
+      <p class="footer-text">
+        Send me a <a href="mailto:agordonvt@gmail.com">message</a>
+        >
+      </p>
+    </footer>
+    <script src="./map.js"></script>
+  </body>
+</html>
