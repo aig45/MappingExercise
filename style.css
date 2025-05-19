@@ -117,7 +117,7 @@ a:visited {
   border-color: #ff8800;
 }
 
-#map {
+#map, #map2 {
   width: 100%;
   height: 800px;
   align: center;
