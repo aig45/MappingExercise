@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Alex Gordon" />
+    <meta
+      name="keywords"
+      content="mapping, storytelling, urban design, new york"
+    />
+    <title>Assignment 4 Map with Census Data at Two Different Scales</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v3.9.4/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.9.4/mapbox-gl.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a
+        class="nav-title"
+        href="../index.html"
+        >URBAN DATA MAP ASSIGNMENT</a
+      >
+    </header>
+    <main>
+            <div class="assignment">
+        <p class="assignment-title">Global Data - Mapbox Base Maps</p>
+        <p class="assignment-description">
+          Census Data
+        </p>
+        </div>
+          <div id='title' class="title">
+              <h2> Map of Median Income by State and County</h2>
+              <p>This data shows median yearly income by state and by county in 2023. At this scale, a lot of nuance is lost. New York, for example, has a median income of between $80,000 and $99,999 which is largely influenced by New York City and the nearby region. This does not reflect the amount of poverty or lower income that is common across upstate New York. It is not untill you zoom in to the county level that you start to see geographic patterns of median income. One common pattern is concentration of higher income around urban centers. Rural counties, often where cost of living is lower, more often have lower median income. Counties with median incomes less than $40,000 are not shown with fill in this map. This representation shows the vast spans of counties with low median incomes in contrast to pockets of higher income, likely correlating to desirability and higher paying job opportunities.</p>
+          <div style="height: 10px;"></div>
+
+          </div>
+          <p></p>
+
+        <div id="map"></div>
+      </div>
+    </main>
+
+<style>
+    .legend {
+        background-color: #fff;
+        border-radius: 3px;
+        bottom: 30px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        font:
+            12px/20px 'Helvetica Neue',
+            Arial,
+            Helvetica,
+            sans-serif;
+        padding: 10px;
+        position: absolute;
+        right: 10px;
+        z-index: 1;
+    }
+
+    .legend div span {
+        border-radius: 50%;
+        display: inline-block;
+        height: 10px;
+        margin-right: 5px;
+        width: 10px;
+    }
+</style>
+
+<div id="state-legend" class="legend">
+    <h4>Median Income</h4>
+    <div><span style="background-color: #fef0d9"></span>$40000</div>
+    <div><span style="background-color: #fdcc8a"></span>$60000</div>
+    <div><span style="background-color: #fc8d59"></span>$80000</div>
+    <div><span style="background-color: #d7301f"></span>$100000</div>
+</div>
+
+<div id="county-legend" class="legend" style="display: none">
+  <h4>Median Income</h4>
+  <div><span style="background-color: #fef0d9"></span>$40000</div>
+  <div><span style="background-color: #fdcc8a"></span>$60000</div>
+  <div><span style="background-color: #fc8d59"></span>$80000</div>
+  <div><span style="background-color: #d7301f"></span>$100000</div>
+</div>
+
+    <footer>
+      <p class="footer-text">
+        Send me a <a href="mailto:agordonvt@gmail.com">message</a>
+        >
+      </p>
+    </footer>
+    <script src="./map.js"></script>
+  </body>
+</html>
