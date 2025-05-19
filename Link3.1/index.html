@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Juan Francisco Saldarriaga" />
+    <meta
+      name="keywords"
+      content="mapping, storytelling, urban design, new york"
+    />
+    <title>Assignment 2 - Interactive Web Map</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v3.9.4/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.9.4/mapbox-gl.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a
+        class="nav-title"
+        href="../index.html"
+        >URBAN DATA MAP ASSIGNMENT</a
+      >
+    </header>
+    <main>
+      <div class="assignment">
+        <p class="assignment-title">New York - Pedestrian Safety Analysis </p>
+        <p class="assignment-description">
+          Data relating to traffic calming methods and intersection improvements for pedestrians
+        </p> 
+      </div>
+          <div id='title' class="title">
+              <h2>Street Improvements and Traffic Calming Turn Treatments </h2>
+              <p>The red points show safety-oriented engineering improvements that use multiple treatments (signals, markings, concrete etc) on both corridors and intersections. Improvements are generally aimed at better organizing traffic, improving travel times, creating shorter, safer pedestrian crossings, and safe routes for bicycle travel. The orange points show intersections where DOT installed traffic calming measures that guide drivers to turn left or right at a safer speed and angle, as well as increase visibility for pedestrians in the crosswalk. Blue points mark rent controlled apartments to reveal concentrations of areas where people are spending less on rent. All data is from NYC Open Data and shows data updated in 2025.</p>
+              <div id="income-legend" class="legend">
+                <h4>Net Migration</h4>
+                  <div><span style="background-color: #ff5722"></span>Street Improvements </div>
+                  <div><span style="background-color: #FF8200"></span>Traffic Calming Turn Treatments </div>
+                  <div><span style="background-color: #2b8cbe"></span>Rent Controlled Apartments </div>
+              </div>
+          </div>
+          <p></p>
+
+        <body>
+          <div id='map'></div>
+          </div>
+      </body>
+
+      </div>
+    </main>
+    <footer>
+      <p class="footer-text">
+        Send me a <a href="mailto:agordonvt@gmail.com">message</a>
+        >
+      </p>
+    </footer>
+    <script src="./map.js"></script>
+  </body>
+</html>
