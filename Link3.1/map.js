@@ -13,7 +13,7 @@ map.on('load', () => {
   // 🔸 Layer 1: Intersections
   map.addSource('intersections', {
     type: 'geojson',
-    data: 'Link3.1/VZV_SIP_Intersections_20250312.geojson'
+    data: '/Link3.1/VZV_SIP_Intersections_20250312.geojson'
   });
 
   map.addLayer({
@@ -44,7 +44,7 @@ map.on('load', () => {
   // 🔹 Layer 2: Traffic Calming
   map.addSource('traffic-calming', {
     type: 'geojson',
-    data: 'Link3.1/VZV_Turn_Traffic_Calming_20250313.geojson'
+    data: '/Link3.1/VZV_Turn_Traffic_Calming_20250313.geojson'
   });
 
   map.addLayer({
@@ -75,7 +75,7 @@ map.on('load', () => {
   // 🟢 Layer 3: Rent Regulated Housing
   map.addSource('rent-regulated', {
     type: 'geojson',
-    data: 'Link3.1/rentregulated.json'
+    data: '/Link3.1/rentregulated.json'
   });
 
   map.addLayer({
