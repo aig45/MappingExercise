@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Juan Francisco Saldarriaga" />
+    <meta
+      name="keywords"
+      content="mapping, storytelling, urban design, new york"
+    />
+    <title>Assignment 3 - Maps with Different Projections and Classifications</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v3.9.4/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.9.4/mapbox-gl.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a
+        class="nav-title"
+        href="../index.html"
+        >URBAN DATA MAP ASSIGNMENT</a
+      >
+    </header>
+    <main>
+      <div class="assignment">
+        <p class="assignment-title">Global Data - Mapbox Base Maps</p>
+        <p class="assignment-description">
+          Migration Patterns
+        </p>
+        </div>
+          <div id='title' class="title">
+              <h2>Net Migration in 2012 by Country </h2>
+              <p>Net migration refers to the difference between the number of people entering a country or region (immigrants) and the number of people leaving (emigrants) over a specific period, typically a year. It essentially measures the net gain or loss of population due to migration. Data Sources: Countries from Natural Earth 50M scale data; Population and Net Migration data from the World Bank, World Development Indicators.</p>
+              <div id="income-legend" class="legend">
+                <h4>Net Migration</h4>
+                  <div><span style="background-color: #f1eef6"></span>- 2000000 </div>
+                  <div><span style="background-color: #bdc9e1"></span>- 100000 </div>
+                  <div><span style="background-color: #2b8cbe"></span>0 </div>
+                  <div><span style="background-color: #2b8cbe"></span>100000 </div>
+                  <div><span style="background-color: #045a8d"></span>2000000 + </div>
+              </div>
+          </div>
+          <p></p>
+
+        <div id="map"></div>
+
+        <div id="map2"></div>
+      </div>
+    </main>
+
+
+    <footer>
+      <p class="footer-text">
+        Send me a <a href="mailto:agordonvt@gmail.com">message</a>
+        >
+      </p>
+    </footer>
+    <script src="./map.js"></script>
+    <script src="Link4/map2.js"></script>
+  </body>
+</html>
