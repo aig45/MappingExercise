@@ -13,7 +13,7 @@ map.on('load', () => {
   // 🔸 Layer 1: Intersections
   map.addSource('intersections', {
     type: 'geojson',
-    data: '/Link3.1/VZV_SIP_Intersections_20250312.geojson'
+    data: '/MappingExercise/Link3.1/VZV_SIP_Intersections_20250312.geojson'
   });
 
   map.addLayer({
